@@ -1,0 +1,17 @@
+<div class="container">
+  <h3 class="text-center">送信が完了しました</h3>
+
+  <div class="mx-auto" style="width: 250px;">
+
+    <div class="mt-4">内容は以下の通りです</div>
+
+    <div class="mt-2">
+      [タイトル]<p class="font-weight-bold"><%= @mail_title %></p>
+    </div>
+
+    <div>
+      [本文]<p class="font-weight-bold"><%= safe_join(@mail_content.split("\n"), tag(:br)) %></p>
+    </div>
+
+  </div>
+</div>
